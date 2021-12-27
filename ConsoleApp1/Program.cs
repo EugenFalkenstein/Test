@@ -2,11 +2,20 @@
 
 namespace ConsoleApp1
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Eugen!!!!!!");
+            Hello hello = new Hello();
+            Console.WriteLine(hello.Echo("Hello Eugen!!!!!!"));
+        }
+    }
+
+    public class Hello
+    {
+        public string Echo(string value)
+        {
+            return value;
         }
     }
 }
